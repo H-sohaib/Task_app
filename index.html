@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task App</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+    }
+
+    .form {
+      background-color: #eee;
+      width: 500px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px 0;
+      border-radius: 3px;
+    }
+
+    .form .input {
+      padding: 10px;
+      width: 70%;
+      border: 1px solid rgb(219, 213, 213);
+      border-radius: 3px;
+      margin-right: 10px;
+    }
+
+    .form .input::placeholder {
+      color: #ccc;
+      text-align: center;
+      font-size: 15px;
+      text-transform: capitalize;
+      user-select: none;
+    }
+
+    .form .add {
+      padding: 10px;
+      border: 0;
+      border-radius: 5px;
+      background-color: #f0472c;
+      color: white;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .tasks {
+      width: 500px;
+      min-height: 100px;
+      background-color: #eee;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 2px;
+    }
+
+    .task {
+      background-color: white;
+      border-radius: 3px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      border: 0;
+      background-color: #f0472c;
+      color: white;
+      font-size: 12px;
+      border-radius: 3px;
+      padding: 3px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .task span {
+      font-size: 19px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="form">
+    <input type="text" class="input" placeholder="write a task">
+    <button class="add">Add Task</button>
+  </div>
+  <div class="tasks">
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
